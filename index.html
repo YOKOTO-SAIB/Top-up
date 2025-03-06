@@ -1,0 +1,41 @@
+<!DOCTYPE html><html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top-Up Game Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Top-Up Game Store</h1>
+        <nav>
+            <button id="login-btn">Login</button>
+        </nav>
+    </header>
+    <main>
+        <section class="game-list">
+            <h2>Pilih Game untuk Top-Up</h2>
+            <div id="games-container">
+                <!-- Daftar game akan dimuat dari JavaScript -->
+            </div>
+        </section>
+    </main>
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login Admin</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button id="submit-login">Login</button>
+        </div>
+    </div>
+    <div id="admin-panel" class="admin-panel hidden">
+        <h2>Panel Admin</h2>
+        <div id="security-alerts">
+            <h3>Pemberitahuan Keamanan</h3>
+            <ul id="alert-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
